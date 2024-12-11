@@ -3,16 +3,6 @@ import torch.nn as nn
 import copy
 from model._abstract_model import SequentialRecModel
 from model._modules import LayerNorm, FeedForward
-
-"""
-[Paper]
-Author: Kun Zhou et al. 
-Title: "Filter-enhanced MLP is All You Need for Sequential Recommendation"
-Conference: WWW 2022
-
-[Code Reference]
-https://github.com/Woeee/FMLP-Rec
-"""
     
 class FMLPRecModel(SequentialRecModel):
     def __init__(self, args):
